@@ -6,10 +6,22 @@
   {% endif %}
 
   {% if section.settings.header-search-show %}
-    <a class="searchbar-open" href="#">{{ 'layout.header.search_toggle_link' | t }}
+    <a class="searchbar-open" style="display:none;" href="#">{{ 'layout.header.search_toggle_link' | t }}
       {% include 'snippet-symbol' with 'search' %}
     </a>
   {% endif %}
+
+  <div class="searchbar-container">
+  <form  action="/search" method="get" role="search">
+    {% if settings.search-products-only %}<input type="hidden" name="type" value="product" />{% endif %}
+    <input name="q" type="text" placeholder="Search" class="search-box hint text small" />
+    {% comment %}<input type="submit" value="" name="submit" aria-hidden="true" class="glyph search"  />{% endcomment %}
+    <button class="search">{% include 'snippet-symbol' with 'search' %}</button>
+  </form>
+  {% comment %} <a href="#" aria-hidden="true" class="searchbar-close cross">
+    {% include 'snippet-symbol' with 'cross' %}
+  </a> {% endcomment %}
+</div>
 
   {% if section.settings.header-account-show and shop.customer_accounts_enabled %}
     <a class="account-open" href="#">{{ 'layout.header.account_toggle_link' | t }}
@@ -19,17 +31,17 @@
 
 </div>
 
-<div class="searchbar-container">
+{% comment %} <div class="searchbar-container" style="display:inline-block;">
   <form  action="/search" method="get" role="search">
     {% if settings.search-products-only %}<input type="hidden" name="type" value="product" />{% endif %}
     <input name="q" type="text" placeholder="{{ 'layout.header.search_placeholder' | t }}" class="search-box hint text small" />
     {% comment %}<input type="submit" value="" name="submit" aria-hidden="true" class="glyph search"  />{% endcomment %}
     <button class="search">{% include 'snippet-symbol' with 'search' %}</button>
   </form>
-  <a href="#" aria-hidden="true" class="searchbar-close cross">
+  {% comment %} <a href="#" aria-hidden="true" class="searchbar-close cross">
     {% include 'snippet-symbol' with 'cross' %}
-  </a>
-</div>
+  </a> {% endcomment %}
+</div> {% endcomment %}
 
 <div class="account-container">
   {% if customer %}
