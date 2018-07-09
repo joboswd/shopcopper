@@ -11,6 +11,8 @@ assets/password-page-background.jpg:
   development: 2018-07-06T13:47:38+08:00   4d5821272f875e5c11dd3a8c8e1d6133
 assets/ronald_custom.scss.liquid:
   development: 2018-07-06T22:27:58+08:00   1b3549d775fcf3a101d59e04658550af
+assets/ronald_outofstock.scss.liquid:
+  development: 2018-07-09T13:14:55+08:00   120aff10ccdafdfc23d3cacc36a90bb8
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-06T13:47:38+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -28,7 +30,7 @@ config/settings_schema.json:
 layout/SWYM_BACKUP_theme.liquid:
   development: 2018-07-06T13:47:39+08:00   abbe45ba24961079c5d529a7e600e94b
 layout/theme.liquid:
-  development: 2018-07-06T22:07:34+08:00   ba53f462aefc95af964b7493a4840596
+  development: 2018-07-09T13:06:39+08:00   acde37f29c3b6ca249623641e4e6a4a1
 locales/en.default.json:
   development: 2018-07-06T13:47:40+08:00   4a8efcd2d6b554bd77135f5831b87066
 sections/article.liquid:
@@ -109,8 +111,10 @@ snippets/framework--x-menu.liquid:
   development: 2018-07-06T13:47:40+08:00   01916e7d15238859b5cbde5fc08cf213
 snippets/framework--y-menu.liquid:
   development: 2018-07-06T13:47:40+08:00   4a5abeb50cd375f5c09cf7f20ea819b0
+snippets/iStock-notify-me.bak.liquid:
+  development: 2018-07-09T13:16:18+08:00   65c49cbf083c553b16baaeb13eb0e285
 snippets/iStock-notify-me.liquid:
-  development: 2018-07-06T13:47:40+08:00   65c49cbf083c553b16baaeb13eb0e285
+  development: 2018-07-09T13:16:30+08:00   919d2449577ac57afb1f04ad735ccd52
 snippets/icon-sprite.svg.liquid:
   development: 2018-07-06T13:47:40+08:00   7ed9235ec7f883fcdd73b8d00b5fad03
 snippets/partial--mobile-nav.liquid:
