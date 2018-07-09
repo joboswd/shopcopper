@@ -74,7 +74,7 @@ sections/pages.liquid:
 sections/password.liquid:
   development: 2018-07-06T13:47:37+08:00   8b0ed4fd1f95c864ca6aa9e7dbaf3f6e
 sections/product.liquid:
-  development: 2018-07-09T11:54:31+08:00   c5c9f8a6ad50b3f0d64946d740bb09b0
+  development: 2018-07-09T13:01:14+08:00   eb7f2b4b735e03b7b454863125d27825
 sections/slideshow.liquid:
   development: 2018-07-06T13:47:37+08:00   3c943a06e6b4a4850a9cc06e9035c914
 snippets/custom-styles.liquid:
