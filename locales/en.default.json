@@ -45,7 +45,7 @@
       "login_cancel": "cancel",
       "mailing_list_placeholder": "Your email",
       "mailing_list_button": "submit",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": ""
     }
   },
   "layout": {
@@ -60,7 +60,7 @@
       "account_signed_in_html": "{{ view_account_link }} or {{ logout_link }}",
       "account_view_link": "View account",
       "account_logout_link": "Log out",
-      "cart": "Cart",
+      "cart": "My Cart",
       "back": "Back"
     },
     "footer": {
@@ -158,8 +158,8 @@
     "sold_out": {
       "variant": "This variant is currently sold out",
       "product": "This product is currently sold out.",
-      "form_notification": "Thanks! We will notify you when it becomes available!",
-      "form_description": "Please fill in the form below if you'd like to be notified when it becomes available.",
+      "form_notification": "Thanks! We will notify you via email when it becomes available!",
+      "form_description": "RESTOCK ALERT: Please fill in the form below if you'd like to be notified when it becomes available.",
       "feedback_invalid_email": "Please provide a valid email address.",
       "email_placeholder": "Your Email",
       "email_description": "Please notify me when this is back in stock",

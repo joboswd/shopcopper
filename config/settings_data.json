@@ -230,7 +230,20 @@
           "1530816878481": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Untitled-10603.jpg",
+              "image": "shopify:\/\/shop_images\/0604_banner_website_7e1697ab-f2da-4589-8c3a-ce710a38c577.jpg",
+              "slide-title": "",
+              "slide-tagline": "",
+              "slide-link-url": "shopify:\/\/collections\/all",
+              "slide-link-title": "",
+              "slide-y-pos": "middle",
+              "slide-x-pos": "left",
+              "slide-text-pos": "text-left"
+            }
+          },
+          "1530881037201": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled-10604_7dac578b-9dc2-4249-97f2-e7b1eecf5abc.jpg",
               "slide-title": "",
               "slide-tagline": "",
               "slide-link-url": "shopify:\/\/collections\/all",
@@ -242,17 +255,59 @@
           }
         },
         "block_order": [
-          "1530816878481"
+          "1530816878481",
+          "1530881037201"
         ],
         "settings": {
           "autoplay": true,
           "transition_style": "default",
           "rotate-frequency-range": 7
         }
+      },
+      "1530881070086": {
+        "type": "framework--featured-grid",
+        "blocks": {
+          "1530881070086-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MAY_2018_JENNICA-DANIELLA00914banner_0604.jpg",
+              "title": "",
+              "subtitle": "",
+              "link-url": "shopify:\/\/collections\/the-great-denim-sale"
+            }
+          },
+          "1530881070086-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MAY_2018_JENNICA-DANIELLA018410604_608966fe-f5b7-4801-8212-23bd5490f3a5.jpg",
+              "title": "",
+              "subtitle": "",
+              "link-url": "shopify:\/\/collections\/new-stuff"
+            }
+          }
+        },
+        "block_order": [
+          "1530881070086-0",
+          "1530881070086-1"
+        ],
+        "settings": {
+          "background-color": "light",
+          "full-width": false,
+          "spacing": true,
+          "alternative-color": false,
+          "text-position": "center",
+          "width": 2,
+          "mobile-width": "2",
+          "title": "",
+          "subtitle": "",
+          "link-url": "",
+          "link-text": ""
+        }
       }
     },
     "content_for_index": [
       "1530816855163",
+      "1530881070086",
       "1519177181912",
       "1530233365157"
     ]
