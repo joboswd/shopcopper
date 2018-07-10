@@ -112,6 +112,12 @@
       </a>
     {% endif %}
 
+    {% include 'swym-product-view', product: product %}
+    <button class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
+    data-swaction="addToWishlist" 
+    data-product-id="{{product.id | json}}">
+    </button>
+
     <a href="{{ url }}">
       <div class="product--price-wrapper">
         {% if compare_price %}

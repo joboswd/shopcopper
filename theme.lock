@@ -48,7 +48,7 @@ sections/collection.liquid:
 sections/featured-blog.liquid:
   development: 2018-07-09T14:57:37+08:00   413053ee4ed4c7f2651bfbbde5d559a0
 sections/featured-collection.liquid:
-  development: 2018-07-09T14:57:37+08:00   d55098613a3c6371eea5f9ad93f5a830
+  development: 2018-07-10T22:18:47+08:00   9c79904241c28720e03a39003a814b21
 sections/featured-product.liquid:
   development: 2018-07-09T14:57:37+08:00   5d464939ed08bba00fa2aac2c387add6
 sections/footer.liquid:
@@ -128,7 +128,7 @@ snippets/partial--mobile-nav.liquid:
 snippets/partial--popup.liquid:
   development: 2018-07-09T14:57:41+08:00   c00bf3fb3574caca93ab3876fced07e5
 snippets/partial--product.liquid:
-  development: 2018-07-09T14:57:41+08:00   2bf4728e504e759f1355f30d621fdcde
+  development: 2018-07-10T22:19:48+08:00   17e89ecbe112ac3658dfec9ed11936a3
 snippets/snippet-article-share.liquid:
   development: 2018-07-09T14:57:41+08:00   d39490ac6604bd5a16c71290584165c0
 snippets/snippet-blog-sidebar.liquid:
@@ -182,7 +182,7 @@ snippets/snippet-symbol.liquid:
 snippets/snippet-transparent.liquid:
   development: 2018-07-09T14:57:42+08:00   162a091ff7979a13fde15feec3231212
 snippets/swym-product-view.liquid:
-  development: 2018-07-09T14:57:42+08:00   663b26ad7e7cb8e45e83ebce3ad4d762
+  development: 2018-07-10T22:10:55+08:00   e544cef8a38ee30bbe48f5b5ab0ff06d
 snippets/swymSnippet.liquid:
   development: 2018-07-09T14:57:42+08:00   1eaeb09e8986296ed36dfa4ccec5183c
 templates/404.liquid:
