@@ -17,6 +17,8 @@ assets/ronald_nav.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   db71a8f0643b432a0d6fbbbd065d7858
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   6db654ed948218fbfa8f7db5e94da279
+assets/ronald_product.scss.liquid:
+  development: 2018-07-11T10:59:37+08:00   86b9856d71ada8d897c86ddab1458598
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-09T14:57:40+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -34,7 +36,7 @@ config/settings_schema.json:
 layout/SWYM_BACKUP_theme.liquid:
   development: 2018-07-10T13:55:39+08:00   abbe45ba24961079c5d529a7e600e94b
 layout/theme.liquid:
-  development: 2018-07-10T16:42:27+08:00   fa936aaeeadae793ae246c219cc706a0
+  development: 2018-07-11T10:31:48+08:00   de0b62d7485a716650720aa257dc75a2
 locales/en.default.json:
   development: 2018-07-09T14:57:41+08:00   4e6ae261e192a7edf4f4d520f7d5f334
 sections/article.liquid:
@@ -48,7 +50,7 @@ sections/collection.liquid:
 sections/featured-blog.liquid:
   development: 2018-07-09T14:57:37+08:00   413053ee4ed4c7f2651bfbbde5d559a0
 sections/featured-collection.liquid:
-  development: 2018-07-10T22:18:47+08:00   9c79904241c28720e03a39003a814b21
+  development: 2018-07-11T10:14:17+08:00   d55098613a3c6371eea5f9ad93f5a830
 sections/featured-product.liquid:
   development: 2018-07-09T14:57:37+08:00   5d464939ed08bba00fa2aac2c387add6
 sections/footer.liquid:
@@ -128,7 +130,7 @@ snippets/partial--mobile-nav.liquid:
 snippets/partial--popup.liquid:
   development: 2018-07-09T14:57:41+08:00   c00bf3fb3574caca93ab3876fced07e5
 snippets/partial--product.liquid:
-  development: 2018-07-10T22:19:48+08:00   17e89ecbe112ac3658dfec9ed11936a3
+  development: 2018-07-11T10:53:24+08:00   17e89ecbe112ac3658dfec9ed11936a3
 snippets/snippet-article-share.liquid:
   development: 2018-07-09T14:57:41+08:00   d39490ac6604bd5a16c71290584165c0
 snippets/snippet-blog-sidebar.liquid:
