@@ -3559,7 +3559,7 @@ function(e,t){"object"==typeof exports?module.exports=t():"function"==typeof def
       var _this;
       _this = this;
       _this.product_grid.owlCarousel({
-        items: 4,
+        items: 5,
         navigation: true,
         scrollPerPage: true,
         slideSpeed: 800,

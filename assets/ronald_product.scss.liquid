@@ -1,24 +1,83 @@
-// collections wishlist
+// featured collection
 
-.product-grid--root {
+.section--featured-collection {
+
+    .product-grid--root.owl-carousel {
+        .product--root {
+            padding: 10px 10px 89px 10px;
+    
+            .product--details {
+                text-align: left;
+                position: absolute;
+                left: 0;
+                right: 0;
+    
+                .product--title {
+                    font-size: 12px;
+                    float: left;
+                    max-width: 68%;
+                    padding-left: 10px;
+                    position: relative;
+                
+                }
+    
+                button.swym-button {
+                    float: right;
+                    margin-right: 10px;
+                }
+    
+                .product--price-wrapper {
+                    padding-left: 10px;
+                    width: 50%;
+                }
+            }
+    
+        }
+    }    
+}
+
+// general collection
+
+.section--collection {
     .product--root {
         .product--details {
             text-align: left;
-
+    
             .product--title {
+                font-size: 14px;
                 float: left;
                 max-width: 70%;
-            
+                // padding-left: 10px;
+                // position: relative;
+    
+                @media screen and (min-width: 376px) and (max-width: 480px) {
+                    max-width: 76%;
+                    font-size: 10px;
+                    padding-bottom: 3px;
+                }
+    
+                @media screen and (min-width: 320px) and (max-width: 375px) {
+                    max-width: 90%;
+                    font-size: 10.5px;
+                    padding-bottom: 3px;
+                }
             }
-
+    
             button.swym-button {
                 float: right;
+                // margin-right: 10px;
             }
-
+    
             .product--price-wrapper {
+                // padding-left: 10px;
                 width: 50%;
+    
+                .product--price {
+                    @media screen and (min-width: 320px) and (max-width: 480px) {
+                        font-size: 10.5px;
+                    }
+                }
             }
-        }
-
+        } // end of product details
     }
 }
