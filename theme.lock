@@ -9,6 +9,8 @@ assets/lazysizes.min.js:
   development: 2018-07-09T14:57:39+08:00   2f3b804f423208dca6b029dda898d7c9
 assets/password-page-background.jpg:
   development: 2018-07-09T14:57:39+08:00   aff9fd9edc1d73d08a5198ed58ed7b66
+assets/ronald_collection.scss.liquid:
+  development: 2018-07-13T20:26:43+08:00   7b07f96b485f9517977ae2db23c13645
 assets/ronald_custom.scss.liquid:
   development: 2018-07-06T22:27:58+08:00   1b3549d775fcf3a101d59e04658550af
 assets/ronald_footer.scss.liquid:
@@ -17,8 +19,8 @@ assets/ronald_nav.scss.liquid:
   development: 2018-07-11T13:45:27+08:00   351905de158158bba49d3af4480cb6f0
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   6db654ed948218fbfa8f7db5e94da279
-assets/ronald_product.scss.liquid:
-  development: 2018-07-12T23:02:37+08:00   840590ea88a3e6f537d8e851f88cede9
+assets/ronald_product.scss:
+  development: 2018-07-13T22:22:36+08:00   e76a74846d50ee9f485e401976469935
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-09T14:57:40+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -26,7 +28,7 @@ assets/theme.js:
 assets/theme.min.js:
   development: 2018-07-12T21:26:51+08:00   5ce95a6494d01340a61f0a4246b80d9e
 assets/theme.scss.liquid:
-  development: 2018-07-09T14:57:40+08:00   4da3cc9f93aaa710bc1b1f6fea3fc05c
+  development: 2018-07-13T20:21:02+08:00   4da3cc9f93aaa710bc1b1f6fea3fc05c
 assets/transparent-1x1.png:
   development: 2018-07-09T14:57:40+08:00   978c1bee49d7ad5fc1a4d81099b13e18
 config/settings_data.json:
@@ -36,7 +38,7 @@ config/settings_schema.json:
 layout/SWYM_BACKUP_theme.liquid:
   development: 2018-07-10T13:55:39+08:00   abbe45ba24961079c5d529a7e600e94b
 layout/theme.liquid:
-  development: 2018-07-11T10:31:48+08:00   de0b62d7485a716650720aa257dc75a2
+  development: 2018-07-13T20:28:20+08:00   f9d51834d95369c473d545cb31958935
 locales/en.default.json:
   development: 2018-07-09T14:57:41+08:00   4e6ae261e192a7edf4f4d520f7d5f334
 sections/article.liquid:
@@ -84,7 +86,7 @@ sections/pages.liquid:
 sections/password.liquid:
   development: 2018-07-09T14:57:38+08:00   8b0ed4fd1f95c864ca6aa9e7dbaf3f6e
 sections/product.liquid:
-  development: 2018-07-09T14:57:38+08:00   73101b938641d1f2c796ff61fb600270
+  development: 2018-07-13T21:11:10+08:00   5ab8598c0c9d34047eb2a598bf2c7809
 sections/slideshow.liquid:
   development: 2018-07-09T14:57:38+08:00   3c943a06e6b4a4850a9cc06e9035c914
 snippets/custom-styles.liquid:
