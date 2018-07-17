@@ -38,7 +38,24 @@
 
 // general collection & search page
 
-.section--collection, .template-search {
+.template-collection, .template-search {
+
+    // for header breadcrumbs
+    header {
+        .breadcrumbs {
+            @media screen and (min-width: 320px) and (max-width: 768px) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    // for gap near header in mobile
+    .description.columns {
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+            margin: 20px 0;
+        }
+    }
+
     .product--root {
         .product--details {
             text-align: left;
