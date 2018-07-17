@@ -196,13 +196,11 @@
           </div>
         {% endif %}
       </div>
-
-
-
       <div class="product-page--description">
         <div itemprop="description" class="rte-content">
           {{ product.description }}
         </div>
+        {% include 'product--more-details' %}
       </div>
 
       {% if product.images.size > 0 %}

@@ -9,6 +9,8 @@ assets/lazysizes.min.js:
   development: 2018-07-09T14:57:39+08:00   2f3b804f423208dca6b029dda898d7c9
 assets/password-page-background.jpg:
   development: 2018-07-09T14:57:39+08:00   aff9fd9edc1d73d08a5198ed58ed7b66
+assets/ronald.js:
+  development: 2018-07-17T12:39:02+08:00   2d483ea0bbc5beac2ccc7f4f75e285aa
 assets/ronald_collection.scss.liquid:
   development: 2018-07-17T11:07:58+08:00   b58ea48ccfd0925247da8c6ba552ed5d
 assets/ronald_custom.scss.liquid:
@@ -19,8 +21,8 @@ assets/ronald_nav.scss.liquid:
   development: 2018-07-11T13:45:27+08:00   351905de158158bba49d3af4480cb6f0
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   6db654ed948218fbfa8f7db5e94da279
-assets/ronald_product.scss:
-  development: 2018-07-13T22:22:36+08:00   e76a74846d50ee9f485e401976469935
+assets/ronald_product.scss.liquid:
+  development: 2018-07-17T21:37:54+08:00   a01107081b31f6de96481626d2b69176
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-09T14:57:40+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -38,7 +40,7 @@ config/settings_schema.json:
 layout/SWYM_BACKUP_theme.liquid:
   development: 2018-07-10T13:55:39+08:00   abbe45ba24961079c5d529a7e600e94b
 layout/theme.liquid:
-  development: 2018-07-13T20:28:20+08:00   f9d51834d95369c473d545cb31958935
+  development: 2018-07-17T20:35:45+08:00   dd44b91dfb57d36e03419279c90f871d
 locales/en.default.json:
   development: 2018-07-09T14:57:41+08:00   4e6ae261e192a7edf4f4d520f7d5f334
 sections/article.liquid:
@@ -86,7 +88,7 @@ sections/pages.liquid:
 sections/password.liquid:
   development: 2018-07-09T14:57:38+08:00   8b0ed4fd1f95c864ca6aa9e7dbaf3f6e
 sections/product.liquid:
-  development: 2018-07-13T21:11:10+08:00   5ab8598c0c9d34047eb2a598bf2c7809
+  development: 2018-07-17T16:25:05+08:00   405ea32b1fcb1c871dbed12100510f23
 sections/slideshow.liquid:
   development: 2018-07-09T14:57:38+08:00   3c943a06e6b4a4850a9cc06e9035c914
 snippets/custom-styles.liquid:
@@ -127,12 +129,16 @@ snippets/iStock-notify-me.liquid:
   development: 2018-07-09T14:57:41+08:00   e0286f2561c34895acde33954a16a8be
 snippets/icon-sprite.svg.liquid:
   development: 2018-07-09T14:57:41+08:00   7ed9235ec7f883fcdd73b8d00b5fad03
+snippets/more-details--payment-methods.liquid:
+  development: 2018-07-17T22:04:13+08:00   e32310dbc43cb337572ebc03e45d2975
 snippets/partial--mobile-nav.liquid:
   development: 2018-07-09T14:57:41+08:00   19e0f073312fd607e073189443c7330c
 snippets/partial--popup.liquid:
   development: 2018-07-09T14:57:41+08:00   c00bf3fb3574caca93ab3876fced07e5
 snippets/partial--product.liquid:
   development: 2018-07-12T21:17:06+08:00   17e89ecbe112ac3658dfec9ed11936a3
+snippets/product--more-details.liquid:
+  development: 2018-07-17T20:13:37+08:00   5cae108bb44f64a20e0adde5ede98316
 snippets/snippet-article-share.liquid:
   development: 2018-07-09T14:57:41+08:00   d39490ac6604bd5a16c71290584165c0
 snippets/snippet-blog-sidebar.liquid:

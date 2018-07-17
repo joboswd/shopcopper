@@ -40,6 +40,12 @@
   {{ 'ronald_outofstock.scss.css' | asset_url | stylesheet_tag }}
   {% include 'custom-styles' %}
 
+ <!-- Lato -->
+ <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
   <!--[if IE]>
     <style>
       .main-header .currency-selector select {
@@ -135,6 +141,7 @@
   {% include 'snippet-currencies' %}
 
   {{ 'theme.min.js' | asset_url | script_tag }}
+  {{ 'ronald.js' | asset_url | script_tag }}
 
 </head>
 
