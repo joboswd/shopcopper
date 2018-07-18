@@ -133,6 +133,8 @@ snippets/more-details--payment-methods.liquid:
   development: 2018-07-17T22:18:51+08:00   219e784b387693aaa47a21a2d800a0cb
 snippets/more-details--returns.liquid:
   development: 2018-07-18T12:01:54+08:00   449ac6463ef1a91f2ecb98b2d4e9d87e
+snippets/more-details--shipping.liquid:
+  development: 2018-07-18T12:46:27+08:00   008ce0bd99e4f15732e929331afb2dac
 snippets/partial--mobile-nav.liquid:
   development: 2018-07-09T14:57:41+08:00   19e0f073312fd607e073189443c7330c
 snippets/partial--popup.liquid:
@@ -140,7 +142,7 @@ snippets/partial--popup.liquid:
 snippets/partial--product.liquid:
   development: 2018-07-12T21:17:06+08:00   17e89ecbe112ac3658dfec9ed11936a3
 snippets/product--more-details.liquid:
-  development: 2018-07-18T10:10:56+08:00   072071676deb840452102d018be9b11c
+  development: 2018-07-18T12:47:40+08:00   523b865a07c9d06f706fce2a25df644d
 snippets/snippet-article-share.liquid:
   development: 2018-07-09T14:57:41+08:00   d39490ac6604bd5a16c71290584165c0
 snippets/snippet-blog-sidebar.liquid:
