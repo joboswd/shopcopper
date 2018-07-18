@@ -78,7 +78,7 @@ $lato: 'Lato', sans-serif;
 
                     section.content {
                         overflow:hidden;
-                        padding: 20px;
+                        padding: 12px;
                         transition:all 200ms linear;
 
                         p {
@@ -163,7 +163,31 @@ $lato: 'Lato', sans-serif;
                                     } // end of li
                                 }
                             } // end of accordion-container
-                        }
+                            
+                            &.returns {
+
+                                h3 {
+                                    color: #ea9999;
+                                    font-family: inherit;
+                                    font-weight: 600;
+                                }
+                                ul {
+                                    -webkit-padding-start: 24px;
+                                    margin-bottom: 4px;
+                                    margin-top: 12px;
+
+                                    li {
+                                        list-style-type: disc;
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                                ol {
+                                    li {
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                            }
+                        } // end of inner-content
                     }
 
                     &.open {
@@ -207,8 +231,8 @@ $lato: 'Lato', sans-serif;
                         }
 
                         section.content {
-                            max-height:0;
-                            padding:0 20px;
+                            max-height: 0;
+                            padding: 0 12px 0 12px;
                         }
 
                         &:last-of-type {

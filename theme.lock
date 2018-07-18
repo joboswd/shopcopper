@@ -22,7 +22,7 @@ assets/ronald_nav.scss.liquid:
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   6db654ed948218fbfa8f7db5e94da279
 assets/ronald_product.scss.liquid:
-  development: 2018-07-17T21:37:54+08:00   a01107081b31f6de96481626d2b69176
+  development: 2018-07-18T11:59:55+08:00   ac2e165196e539356f9ba2037ef053b0
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-09T14:57:40+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -130,7 +130,9 @@ snippets/iStock-notify-me.liquid:
 snippets/icon-sprite.svg.liquid:
   development: 2018-07-09T14:57:41+08:00   7ed9235ec7f883fcdd73b8d00b5fad03
 snippets/more-details--payment-methods.liquid:
-  development: 2018-07-17T22:04:13+08:00   e32310dbc43cb337572ebc03e45d2975
+  development: 2018-07-17T22:18:51+08:00   219e784b387693aaa47a21a2d800a0cb
+snippets/more-details--returns.liquid:
+  development: 2018-07-18T12:01:54+08:00   449ac6463ef1a91f2ecb98b2d4e9d87e
 snippets/partial--mobile-nav.liquid:
   development: 2018-07-09T14:57:41+08:00   19e0f073312fd607e073189443c7330c
 snippets/partial--popup.liquid:
@@ -138,7 +140,7 @@ snippets/partial--popup.liquid:
 snippets/partial--product.liquid:
   development: 2018-07-12T21:17:06+08:00   17e89ecbe112ac3658dfec9ed11936a3
 snippets/product--more-details.liquid:
-  development: 2018-07-17T20:13:37+08:00   5cae108bb44f64a20e0adde5ede98316
+  development: 2018-07-18T10:10:56+08:00   072071676deb840452102d018be9b11c
 snippets/snippet-article-share.liquid:
   development: 2018-07-09T14:57:41+08:00   d39490ac6604bd5a16c71290584165c0
 snippets/snippet-blog-sidebar.liquid:
