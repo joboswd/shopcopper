@@ -1,0 +1,58 @@
+<button type="button" class="btn addtl-btns" data-toggle="modal" data-target="#paymentMethod">Payment Methods</button>
+<button type="button" class="btn addtl-btns" data-toggle="modal" data-target="#Shipping">Shipping</button>
+<button type="button" class="btn addtl-btns" data-toggle="modal" data-target="#Returns">Returns</button>
+
+<!-- Modal -->
+<div class="modal fade" id="paymentMethod" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Payment Methods</h4>
+        </div>
+        <div class="modal-body">
+            {% include 'more-details--payment-methods' %}
+        </div>
+        {% comment %} <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> {% endcomment %}
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Shipping" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Shipping</h4>
+        </div>
+        <div class="modal-body">
+            {% include 'more-details--shipping' %}
+        </div>
+        {% comment %} <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> {% endcomment %}
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Returns" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Returns</h4>
+        </div>
+        <div class="modal-body">
+            {% include 'more-details--returns' %}
+        </div>
+        {% comment %} <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> {% endcomment %}
+      </div>
+    </div>
+</div>
