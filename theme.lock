@@ -10,7 +10,7 @@ assets/lazysizes.min.js:
 assets/password-page-background.jpg:
   development: 2018-07-09T14:57:39+08:00   aff9fd9edc1d73d08a5198ed58ed7b66
 assets/ronald.js:
-  development: 2018-07-17T12:39:02+08:00   2d483ea0bbc5beac2ccc7f4f75e285aa
+  development: 2018-07-19T21:24:41+08:00   5c2377c052da6e612d1373f232b01e45
 assets/ronald_collection.scss.liquid:
   development: 2018-07-18T22:11:55+08:00   b9ec8cf9071490799fe1dd90e04e77ec
 assets/ronald_custom.scss.liquid:
@@ -22,7 +22,7 @@ assets/ronald_nav.scss.liquid:
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   6db654ed948218fbfa8f7db5e94da279
 assets/ronald_product.scss.liquid:
-  development: 2018-07-18T22:19:42+08:00   a5c5e070266e3a5156322933a8d6c6e9
+  development: 2018-07-19T20:01:55+08:00   94288778d1e6ea7f85faaf08af1443eb
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-09T14:57:40+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -88,7 +88,7 @@ sections/pages.liquid:
 sections/password.liquid:
   development: 2018-07-09T14:57:38+08:00   8b0ed4fd1f95c864ca6aa9e7dbaf3f6e
 sections/product.liquid:
-  development: 2018-07-18T15:52:30+08:00   cc14024f8214031630853ed171e8d7c5
+  development: 2018-07-19T21:32:27+08:00   6f035897074d7ac9eab66986b350be5c
 sections/slideshow.liquid:
   development: 2018-07-09T14:57:38+08:00   3c943a06e6b4a4850a9cc06e9035c914
 snippets/custom-styles.liquid:
@@ -177,6 +177,8 @@ snippets/snippet-pagination.liquid:
   development: 2018-07-09T14:57:42+08:00   b0bc0e341bf63aea125c055ccad91252
 snippets/snippet-product-low-in-stock.liquid:
   development: 2018-07-09T14:57:42+08:00   5a7cf9f644533b24a4d442fef1173af1
+snippets/snippet-product-share--circle.liquid:
+  development: 2018-07-19T14:51:34+08:00   022268e62ccd421430bffb08831dcea0
 snippets/snippet-product-share.liquid:
   development: 2018-07-09T14:57:42+08:00   03d4872c373e49efa639dd837c1d82f7
 snippets/snippet-product-unavailable.liquid:
@@ -185,8 +187,10 @@ snippets/snippet-promo-bar.liquid:
   development: 2018-07-09T14:57:42+08:00   01a17697a849f75e771c52a3e2cf3fd1
 snippets/snippet-quantity.liquid:
   development: 2018-07-09T14:57:42+08:00   4346a197285b8aeca82bb3913b6c4741
+snippets/snippet-related-products--slider.liquid:
+  development: 2018-07-19T21:24:53+08:00   ef77fc4c3bf6fb1380262b40856bba96
 snippets/snippet-related-products.liquid:
-  development: 2018-07-09T14:57:42+08:00   76773102a84fe07159c6ea4ae3ac8862
+  development: 2018-07-19T20:30:09+08:00   76773102a84fe07159c6ea4ae3ac8862
 snippets/snippet-searchbar-account.liquid:
   development: 2018-07-09T14:57:42+08:00   09e4bd31b20fd6907ea99ef792daffbb
 snippets/snippet-size-chart.liquid:

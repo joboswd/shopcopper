@@ -17,20 +17,59 @@ $lucida: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Lucida,Helvetica,Ar
         }
     }
 
-    //thumbnails
-    .product-page--thumbs {
-        .product-page--thumbs-container {
-            .product-page--thumb {
-                @media screen and (min-width: 320px) and (max-width: 480px) {
-                    width: 90px;
+    .product-page--cart-form-block {
+
+        //thumbnails
+        .product-page--thumbs {
+            .product-page--thumbs-container {
+                .product-page--thumb {
+                    @media screen and (min-width: 320px) and (max-width: 480px) {
+                        width: 90px;
+                    }
+
+                    .image--container {
+                        img {
+                            @media screen and (min-width: 320px) and (max-width: 480px) {
+                                // width: 90%;
+                                // height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .row.social-share {
+            background: none;
+            display: none;
+
+            @media screen and (min-width: 769px) {
+                display: block;
+            }
+
+            .columns {
+                padding-left: 20px;
+                padding-right: 0px;
+
+                h2.title {
+                    display: inline-block;
+                    float: left;
+                    font-size: 0.929em;
+                    margin: 19px 40px 0px 0px;
                 }
 
-                .image--container {
-                    img {
-                        @media screen and (min-width: 320px) and (max-width: 480px) {
-                            // width: 90%;
-                            // height: auto;
-                        }
+                .share-item {
+                    border-radius: 100%;
+                    float: left;
+                    font-size: 17.5px;
+                    margin: 7px;
+                    height: 40px;
+                    width: 40px;
+                    padding: 0px;
+
+                    .fw--icon {
+                        margin-top: 10px;
+                        margin-right: 0px;
                     }
                 }
             }
@@ -276,30 +315,46 @@ $lucida: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Lucida,Helvetica,Ar
 
     // social block
     .row.social-share {
-        padding: 40px 0;
+        background: none;
+        display: none;
 
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-            padding: 30px 0;
-        }
+        @media screen and (max-width: 768px) {
+            display: block;
+            padding: 12px;
 
-        .share-item {
+            .columns {
+                padding-left: 20px;
+                padding-right: 0px;
+    
+                h2.title {
+                    display: inline-block;
+                    float: left;
+                    font-size: 0.929em;
+                    margin: 19px 40px 0px 0px;
 
-            @media screen and (min-width: 414px) and (max-width: 480px) {
-                margin: 4px;
-                padding: 7px 8px 4px 9px;
-            }
-
-            @media screen and (min-width: 375px) and (max-width: 413px) {
-                margin: 0px;
-                padding: 5px 5px 5px 9px;
-            }
-
-            span {
-                @media screen and (min-width: 769px) {
-                    letter-spacing: 1px;
+                    @media screen and (max-width: 375px) {
+                        margin-right: 17px;
+                    }
+                }
+    
+                .share-item {
+                    border-radius: 100%;
+                    float: left;
+                    font-size: 17.5px;
+                    margin: 7px;
+                    height: 40px;
+                    width: 40px;
+                    padding: 0px;
+    
+                    .fw--icon {
+                        margin-top: 10px;
+                        margin-right: 0px;
+                    }
                 }
             }
         }
+
+
     }
 
     // modal
@@ -518,6 +573,13 @@ $lucida: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Lucida,Helvetica,Ar
             }
         }
     } // end of modal
+
+    .similar-products {
+        @media screen and (min-width: 320px) and (max-width: 769px) {
+            padding-top: 70px;
+            padding-bottom: 0px;
+        }
+    }
 
     // circle sale & sold-out
     .product--sale, .product--sold-out {

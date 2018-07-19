@@ -195,7 +195,14 @@
             </div>
           </div>
         {% endif %}
+
+        <section class="row social-share">
+          <div class="columns">
+            {% include 'snippet-product-share--circle' with 'product-template' %}
+          </div>
+        </section>
       </div>
+
       <div class="product-page--description">
         <div itemprop="description" class="rte-content">
           {{ product.description }}
@@ -282,7 +289,7 @@
 {% if section.settings.product-share-this-show %}
   <section class="row social-share">
     <div class="columns">
-      {% include 'snippet-product-share' with 'product-template' %}
+      {% include 'snippet-product-share--circle' with 'product-template' %}
     </div>
   </section>
 {% endif %}
