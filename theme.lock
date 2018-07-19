@@ -22,7 +22,7 @@ assets/ronald_nav.scss.liquid:
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-09T14:57:39+08:00   6db654ed948218fbfa8f7db5e94da279
 assets/ronald_product.scss.liquid:
-  development: 2018-07-19T20:01:55+08:00   94288778d1e6ea7f85faaf08af1443eb
+  development: 2018-07-19T22:25:03+08:00   279e431043f61fbfc31d23c6ffa628f5
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-09T14:57:40+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
