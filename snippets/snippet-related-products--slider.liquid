@@ -1,5 +1,5 @@
 
-{% assign number_of_related_products_to_show = section.settings.product-similar-products-amount | to_number %}
+{% assign number_of_related_products_to_show = 8 %}
 
 {% capture number_of_related_products_to_fetch %}{{ number_of_related_products_to_show | plus: 1 }}{% endcapture %}
 
@@ -17,10 +17,9 @@
   {% assign current_product = product %}
 
   <section class="similar-products row">
-    <h2 class="title">{{ 'products.similar_products' | t }}</h2>
+    <h2 class="title">{{ 'products.you_might_like' | t }}</h2>
     <div
       class="similar-products--slider"
-      data-js-class="ProductGrid"
       data-centered="true"
       data-items-per-row="{{ section.settings.product-similar-products-amount }}"
       data-mobile-items-per-row="{{ section.settings.mobile-items-per-row }}"
@@ -31,7 +30,7 @@
           {% assign current_product_found = true %}
         {% else %}
           {% unless current_product_found == false and forloop.last %}
-            {% include 'partial--product', view: 'product-slider' %}
+            {% include 'partial--product--slider', view: 'product-slider' %}
           {% endunless %}
         {% endif %}
       {% endfor %}
@@ -39,3 +38,15 @@
   </section>
 
 {% endif %}
+
+<script>
+    $(document).ready(function(){
+      $('.similar-products--slider').owlCarousel({
+        loop: true,
+        autoplay: false,
+        navigation: true,
+        {% comment %} navigationText: ["<img src={{ 'left-arrow.svg' | asset_url }}>","<img src={{ 'right-arrow.svg' | asset_url }}>"], {% endcomment %}
+        dots: false
+      });
+    });
+</script>

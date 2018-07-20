@@ -8,12 +8,3 @@ function toggle(e) {
       e.className = 'closed';
     }
   }
-
-  $(document).ready(function(){
-    $('.similar-products--slider').owlCarousel({
-      loop:true,
-      autoplay:false,
-      nav:true,
-      dots:false
-    });
-  });

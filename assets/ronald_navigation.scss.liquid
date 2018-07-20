@@ -1,0 +1,67 @@
+//owl - similar products
+
+.similar-products--slider {
+    .owl-buttons {
+        .owl-prev, .owl-next {
+            position: absolute;
+            background: none;
+            opacity: 0.8;
+
+            @media screen and (max-width: 768px) {
+                top: 50%;
+            }
+
+            @media screen and (min-width: 769px) and (max-width: 991px) {
+                top: 43.5%;
+            }
+
+            @media screen and (min-width: 992px) and (max-width: 1024px) {
+                top: 41.5%;
+            }
+
+            @media screen and (min-width: 1025px) and (max-width: 1860px) {
+                top: 39.5%;
+            }
+
+            @media screen and (min-width: 1861px) {
+                top: 43%;
+            }
+        }
+
+        .owl-prev {
+            color: #fff;
+            left: 0;
+            height: 21px;
+            margin: -40px 0 0 -30px;
+
+            &:before {
+                background:url({{'left-arrow.svg' | asset_url }});
+                content: '';
+                width: 21px;
+                height: 20px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: center center;
+                left: 0;            
+            }
+        }
+
+        .owl-next {
+            color: #ffffff;
+            right: 0;
+            margin: -40px -30px 0 0;
+
+            &:before {
+                background:url({{'right-arrow.svg' | asset_url }});
+                content: '';
+                width: 21px;
+                height: 20px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: center center;
+                right: 0;            
+            }
+        }
+    }
+}
+

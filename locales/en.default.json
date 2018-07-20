@@ -148,6 +148,7 @@
     "add_to_cart": "Add to Cart",
     "share_this": "Share this",
     "similar_products": "Similar Products",
+    "you_might_like": "You Might Also Like",
     "size_chart": "Size chart",
     "size_chart_path": "Theme settings > Product page > Size chart",
     "empty_page_content_html": "You haven't linked a page yet. To configure this you'll need to go to your {{ size_chart_path }} section.",
