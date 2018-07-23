@@ -1,4 +1,4 @@
-{% assign products_per_row = section.settings.collections-products-per-row | to_number %}
+{% assign products_per_row = 6 %} <!-- default is section.settings.collections-products-per-row | to_number -->
 {% assign products_per_page =  products_per_row | to_number | times: section.settings.rows-per-page %}
 
 {% paginate collection.products by products_per_page %}

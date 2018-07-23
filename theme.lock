@@ -18,17 +18,17 @@ assets/ronald.js:
 assets/ronald_collection.scss.liquid:
   development: 2018-07-20T04:35:57+08:00   f8207ad8fb614ee1aaa536d114c17448
 assets/ronald_custom.scss.liquid:
-  development: 2018-07-20T04:35:57+08:00   dd8ae7c947b74d74a4394b257e7832d2
+  development: 2018-07-23T16:45:40+08:00   c73049a70e0a408f3acab8f279d5525e
 assets/ronald_footer.scss.liquid:
   development: 2018-07-20T04:35:58+08:00   22c5b86fed7e46982d231f5861f7a6fb
 assets/ronald_nav.scss.liquid:
   development: 2018-07-20T04:35:58+08:00   351905de158158bba49d3af4480cb6f0
 assets/ronald_navigation.scss.liquid:
-  development: 2018-07-21T00:35:32+08:00   dc11b2ed758697f1ca0e940a3a353e60
+  development: 2018-07-23T18:19:37+08:00   257d8ce117779692d31a1e2712795622
 assets/ronald_outofstock.scss.liquid:
   development: 2018-07-20T04:35:58+08:00   6db654ed948218fbfa8f7db5e94da279
 assets/ronald_product.scss.liquid:
-  development: 2018-07-20T04:35:58+08:00   279e431043f61fbfc31d23c6ffa628f5
+  development: 2018-07-23T17:43:43+08:00   85104e924110506035ec1d02267f234b
 assets/styles.gift-card.scss.liquid:
   development: 2018-07-20T04:35:58+08:00   a26e301fddb7ff3cf00cb2138eda947b
 assets/theme.js:
@@ -46,7 +46,7 @@ config/settings_schema.json:
 layout/SWYM_BACKUP_theme.liquid:
   development: 2018-07-21T00:26:23+08:00   abbe45ba24961079c5d529a7e600e94b
 layout/theme.liquid:
-  development: 2018-07-21T00:26:52+08:00   c6f42414a72bef620dc4656d2592d07c
+  development: 2018-07-23T16:43:48+08:00   38f255c74a27c1e1a1473102880ca525
 locales/en.default.json:
   development: 2018-07-21T00:38:03+08:00   8970c776677bec9a6dcc7fbeddf0df50
 sections/article.liquid:
@@ -56,7 +56,7 @@ sections/blog.liquid:
 sections/cart.liquid:
   development: 2018-07-21T00:26:59+08:00   57d54fe33068ae9fdb56039e1c0e7f90
 sections/collection.liquid:
-  development: 2018-07-20T04:35:55+08:00   f70c74082301c08abd2b7957dee7c6d2
+  development: 2018-07-23T21:48:40+08:00   f369e1e8776e8de3da9a823046d2d90e
 sections/featured-blog.liquid:
   development: 2018-07-20T04:35:55+08:00   413053ee4ed4c7f2651bfbbde5d559a0
 sections/featured-collection.liquid:
@@ -88,7 +88,7 @@ sections/framework--map.liquid:
 sections/framework--newsletter.liquid:
   development: 2018-07-20T04:35:56+08:00   7b70a280e462e540503dff8d69ba3b4c
 sections/header.liquid:
-  development: 2018-07-20T04:35:56+08:00   de6bfd99d6cd3d6d508b1154686ff6e1
+  development: 2018-07-23T16:41:31+08:00   3467b38fedf181388d007dc6e7f8f744
 sections/pages.liquid:
   development: 2018-07-20T04:35:56+08:00   4027e7fc8eff6bf9ddc7e026caf38878
 sections/password.liquid:

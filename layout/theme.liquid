@@ -39,6 +39,7 @@
 {% comment %} <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> {% endcomment %}
 
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'ronald_custom.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_nav.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_navigation.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_footer.scss.css' | asset_url | stylesheet_tag }}
@@ -174,7 +175,9 @@
       {% section 'header' %}
 
       <section class="main-content">
-        {{ content_for_layout }}
+        <div class="wrapper--margins">
+          {{ content_for_layout }}
+        </div>
       </section>
 
       {% section 'footer' %}
