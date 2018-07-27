@@ -21,6 +21,8 @@ assets/ronald_custom.scss.liquid:
   development: 2018-07-28T01:05:45+08:00   c73049a70e0a408f3acab8f279d5525e
 assets/ronald_footer.scss.liquid:
   development: 2018-07-28T01:05:45+08:00   22c5b86fed7e46982d231f5861f7a6fb
+assets/ronald_header.scss:
+  development: 2018-07-28T02:07:09+08:00   d4ae0361abdb2bac9ac2e223890d644c
 assets/ronald_nav.scss.liquid:
   development: 2018-07-28T01:05:45+08:00   351905de158158bba49d3af4480cb6f0
 assets/ronald_navigation.scss.liquid:
@@ -46,7 +48,7 @@ config/settings_schema.json:
 layout/SWYM_BACKUP_theme.liquid:
   development: 2018-07-28T01:05:47+08:00   38f255c74a27c1e1a1473102880ca525
 layout/theme.liquid:
-  development: 2018-07-28T01:51:41+08:00   c2a88838d5353e0c78521442f13e6d50
+  development: 2018-07-28T01:57:09+08:00   bf7bb51b00aaa3bf75f6c10a9bd143c7
 locales/en.default.json:
   development: 2018-07-28T01:05:47+08:00   8970c776677bec9a6dcc7fbeddf0df50
 sections/article.liquid:
