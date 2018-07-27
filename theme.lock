@@ -18,7 +18,7 @@ assets/ronald.js:
 assets/ronald_collection.scss.liquid:
   development: 2018-07-28T01:05:45+08:00   f8207ad8fb614ee1aaa536d114c17448
 assets/ronald_custom.scss.liquid:
-  development: 2018-07-28T01:05:45+08:00   c73049a70e0a408f3acab8f279d5525e
+  development: 2018-07-28T02:37:01+08:00   466be4704cb1615e246629fdc4281fb9
 assets/ronald_footer.scss.liquid:
   development: 2018-07-28T01:05:45+08:00   22c5b86fed7e46982d231f5861f7a6fb
 assets/ronald_header.scss:
