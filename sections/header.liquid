@@ -29,79 +29,77 @@
   {% include 'snippet-promo-bar' %}
 
   <header class="main-header">
-    <div class="wrapper--margins">
-      <div class="header--bg"></div>
-      <div class="row top">
-        {% if settings.show_multiple_currencies and section.settings.header-logo-center %}
-          <div class="currency-selector columns left-aligned">
-            {% include 'snippet-currency-selector' %}
-          </div>
+    <div class="header--bg"></div>
+    <div class="row top">
+      {% if settings.show_multiple_currencies and section.settings.header-logo-center %}
+        <div class="currency-selector columns left-aligned">
+          {% include 'snippet-currency-selector' %}
+        </div>
+      {% endif %}
+
+      <div class="columns{% if section.settings.header-logo-center %} logo-center{% endif %}">
+        {% include 'snippet-store-title' %}
+      </div>
+
+      <div class="search-account columns">
+        {% include 'snippet-searchbar-account' %}
+      </div>
+
+    </div><!-- .row -->
+
+    <div class="bottom-row font--accent">
+      <div class="row {% if section.settings.header-menu-center %} text-center{% endif %}">
+
+      {% if linklists[section.settings.menu].links.size > 0 %}
+        {% assign header_nav = section.settings.menu %}
+
+        {% assign menu_alignment = 'left' %}
+        {% if section.settings.header-menu-center %}
+          {% assign menu_alignment = 'center' %}
         {% endif %}
 
-        <div class="columns{% if section.settings.header-logo-center %} logo-center{% endif %}">
-          {% include 'snippet-store-title' %}
+        {%
+          include 'framework--x-menu',
+          js_class: 'XMenu',
+          align: menu_alignment,
+          handle: section.settings.menu
+        %}
+
+      {% endif %}
+
+        <div class="columns cart-container">
+          {% include 'snippet-cart', view: 'desktop' %}
         </div>
-
-        <div class="search-account columns">
-          {% include 'snippet-searchbar-account' %}
-        </div>
-
-      </div><!-- .row -->
-
-      <div class="bottom-row font--accent">
-        <div class="row {% if section.settings.header-menu-center %} text-center{% endif %}">
-
-        {% if linklists[section.settings.menu].links.size > 0 %}
-          {% assign header_nav = section.settings.menu %}
-
-          {% assign menu_alignment = 'left' %}
-          {% if section.settings.header-menu-center %}
-            {% assign menu_alignment = 'center' %}
-          {% endif %}
-
-          {%
-            include 'framework--x-menu',
-            js_class: 'XMenu',
-            align: menu_alignment,
-            handle: section.settings.menu
-          %}
-
-        {% endif %}
-
-          <div class="columns cart-container">
-            {% include 'snippet-cart', view: 'desktop' %}
-          </div>
-        </div>
-
       </div>
 
-      <div class="header--mobile">
-        <div class="off-canvas--open" data-off-canvas--open="left-sidebar">
-          {% include 'snippet-symbol' with 'menu' %}
-        </div>
+    </div>
 
-        <div class="header--mobile--title">
-          {% include 'snippet-store-title' %}
-        </div>
-
-        <div class="header--mobile--cart">
-          <a class="header--mobile--cart-link font--accent" href="/cart">
-            {{ 'layout.header.cart' | t }}
-            <span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %}">
-              (<span class="number">{{ cart.item_count }}</span>)
-            </span>
-            {% include 'snippet-symbol' with 'cart' %}
-          </a>
-          <div class="header--mobile--recently-added">
-            {% include 'snippet-cart', view: 'mobile' %}
-          </div>
-        </div>
-
+    <div class="header--mobile">
+      <div class="off-canvas--open" data-off-canvas--open="left-sidebar">
+        {% include 'snippet-symbol' with 'menu' %}
       </div>
 
-      <div class="row">
-        <div class="header-divider"></div>
+      <div class="header--mobile--title">
+        {% include 'snippet-store-title' %}
       </div>
+
+      <div class="header--mobile--cart">
+        <a class="header--mobile--cart-link font--accent" href="/cart">
+          {{ 'layout.header.cart' | t }}
+          <span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %}">
+            (<span class="number">{{ cart.item_count }}</span>)
+          </span>
+          {% include 'snippet-symbol' with 'cart' %}
+        </a>
+        <div class="header--mobile--recently-added">
+          {% include 'snippet-cart', view: 'mobile' %}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="header-divider"></div>
     </div>
   </header>
 
