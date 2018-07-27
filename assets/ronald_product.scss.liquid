@@ -10,34 +10,7 @@ $lucida: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Lucida,Helvetica,Ar
         padding-bottom: 45px;
     }
 
-    // featured image for gallery
-    .product-page--images-container {
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-            max-width: 100%;
-        }
-    }
-
     .product-page--cart-form-block {
-
-        //thumbnails
-        .product-page--thumbs {
-            .product-page--thumbs-container {
-                .product-page--thumb {
-                    @media screen and (min-width: 320px) and (max-width: 480px) {
-                        width: 90px;
-                    }
-
-                    .image--container {
-                        img {
-                            @media screen and (min-width: 320px) and (max-width: 480px) {
-                                // width: 90%;
-                                // height: auto;
-                            }
-                        }
-                    }
-                }
-            }
-        }
 
         .row.social-share {
             background: none;
@@ -366,6 +339,35 @@ $lucida: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Lucida,Helvetica,Ar
                     } // end of closed
                 } // end of li
             } 
+        }
+    }
+
+    .product-page--images {
+            // featured image for gallery
+        .product-page--images-container {
+            @media screen and (min-width: 320px) and (max-width: 480px) {
+                max-width: 100%;
+            }
+        }
+
+        //thumbnails
+        .product-page--thumbs {
+            .product-page--thumbs-container {
+                .product-page--thumb {
+                    @media screen and (min-width: 320px) and (max-width: 480px) {
+                        width: 92px;
+                    }
+
+                    .image--container {
+                        img {
+                            @media screen and (min-width: 320px) and (max-width: 480px) {
+                                // width: 90%;
+                                // height: auto;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
