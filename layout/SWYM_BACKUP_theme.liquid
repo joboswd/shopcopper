@@ -40,7 +40,9 @@
 
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_custom.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'ronald_header.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_nav.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'ronald_account.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_navigation.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_footer.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_collection.scss.css' | asset_url | stylesheet_tag }}
@@ -175,9 +177,7 @@
       {% section 'header' %}
 
       <section class="main-content">
-        <div class="wrapper--margins">
-          {{ content_for_layout }}
-        </div>
+        {{ content_for_layout }}
       </section>
 
       {% section 'footer' %}

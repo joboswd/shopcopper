@@ -5,12 +5,6 @@
     </div>
   {% endif %}
 
-  {% if section.settings.header-search-show %}
-    <a class="searchbar-open" href="#">{{ 'layout.header.search_toggle_link' | t }}
-      {% include 'snippet-symbol' with 'search' %}
-    </a>
-  {% endif %}
-
   <div class="searchbar-container">
   <form  action="/search" method="get" role="search">
     {% if settings.search-products-only %}<input type="hidden" name="type" value="product" />{% endif %}
@@ -34,6 +28,9 @@
         <i aria-hidden="true" focusable="false" role="presentation" class="fa fa-heart"></i>
       </a>
     </div>
+    <div class="cart-container">
+        {% include 'snippet-cartv2', view: 'desktop' %}
+    </div>  
   {% endif %}
 
 </div>

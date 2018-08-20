@@ -93,7 +93,7 @@
           "logo": "shopify:\/\/shop_images\/checkout_logo_34.png",
           "logo-height": 90,
           "header--promo-bar--show-on": "all",
-          "header--promo-bar--text": "FREE SHIPPING (VIA XEND) ON ORDERS OVER PHP 1500",
+          "header--promo-bar--text": "CASH ON DELIVERY - METRO MANILA AVAILABLE NOW!",
           "header--promo-bar--link": ""
         }
       },
@@ -252,11 +252,25 @@
               "slide-x-pos": "left",
               "slide-text-pos": "text-left"
             }
+          },
+          "1532934222682": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled-10603.jpg",
+              "slide-title": "",
+              "slide-tagline": "",
+              "slide-link-url": "shopify:\/\/collections\/all",
+              "slide-link-title": "",
+              "slide-y-pos": "middle",
+              "slide-x-pos": "left",
+              "slide-text-pos": "text-left"
+            }
           }
         },
         "block_order": [
           "1530816878481",
-          "1530881037201"
+          "1530881037201",
+          "1532934222682"
         ],
         "settings": {
           "autoplay": true,

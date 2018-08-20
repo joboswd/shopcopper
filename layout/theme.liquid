@@ -42,6 +42,7 @@
   {{ 'ronald_custom.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_header.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_nav.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'ronald_account.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_navigation.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_footer.scss.css' | asset_url | stylesheet_tag }}
   {{ 'ronald_collection.scss.css' | asset_url | stylesheet_tag }}
@@ -173,7 +174,7 @@
     </div>
 
     <div class="off-canvas--main-content">
-      {% section 'header' %}
+      {% section 'header_v2' %}
 
       <section class="main-content">
         {{ content_for_layout }}
