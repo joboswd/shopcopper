@@ -1,7 +1,7 @@
 <div class="cart">
   {% if view == 'desktop' %}
    	<div class="show--medium-large">
-  	  <a class="cart-link" href="/cart">{{ 'layout.header.cart' | t }} 
+  	  <a class="cart-link" href="/cart"><span>{{ 'layout.header.cart' | t }}</span>
   	  {% include 'snippet-symbol' with 'bag-fill' %}
 			<span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %} {% if cart.item_count >= 10 %}morethan10{% endif %}"><span class="number {% if cart.item_count >= 10 %}morethan10{% endif %}">{{ cart.item_count }}</span></span>
 				{% comment %} <i aria-hidden="true" focusable="false" role="presentation" class="fa fa-shopping-bag"></i> {% endcomment %}
