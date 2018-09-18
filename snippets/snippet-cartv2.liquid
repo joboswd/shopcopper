@@ -1,6 +1,5 @@
 <div class="cart">
-  {% if view == 'desktop' %}
-   	<div class="show--medium-large">
+   	<div>
   	  <a class="cart-link" href="/cart"><span>{{ 'layout.header.cart' | t }}</span>
   	  {% include 'snippet-symbol' with 'bag-fill' %}
 			<span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %} {% if cart.item_count >= 10 %}morethan10{% endif %}"><span class="number {% if cart.item_count >= 10 %}morethan10{% endif %}">{{ cart.item_count }}</span></span>
@@ -50,36 +49,5 @@
 
   		</div>
   	</div>
-  {% elsif view == "mobile" %}
-  	<div class="show--small">
-  		<div class="recently-added-mask hide"></div>
-  		<div class="recently-added mobile">
-  			<a class="close cross" tabindex="0">
-          {% include 'snippet-symbol' with 'cross' %}
-  			</a>
-
-
-  			<div class="row">
-  				<div class="columns">
-  					<p><strong class="all-caps">{{ 'products.recently_added_popup.title' | t }}</strong></p>
-  					<p class="mobile-item"></p>
-  					<p class="items-count"><a href="/cart"><span class="number">{{ cart.item_count }}</span> {{ 'products.recently_added_popup.items' | t }}</a></p>
-  					<p><strong class="all-caps">{{ 'products.recently_added_popup.total' | t }} <span class="total-price money" style="margin-left:5px;">{{ cart.total_price | money }}</span></strong></p>
-  				</div>
-  			</div>
-
-  			<div class="row">
-  			  <div class="checkout columns">
-  			    <a class="button" href="/cart">{{ 'products.recently_added_popup.checkout_button' | t }}</a>
-  			  </div><!-- #cart-meta -->
-  			</div>
-
-  			<div class="error">
-  			  <p>{{ 'products.recently_added_popup.unavailable' | t }}</p>
-  			</div>
-
-  		</div>
-  	</div>
-  {% endif %}
 </div>
 
