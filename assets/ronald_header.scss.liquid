@@ -21,6 +21,12 @@
                     position: absolute;
                     left: 18%;
                 }
+
+                img {
+                    @media screen and (max-width: 414px) {
+                        max-height: 32px;
+                    }
+                }
             }
 
             .search-account--mobile.columns {
@@ -59,7 +65,12 @@
                                 width: 28px;
                                 height: 28px;
 
-
+                                svg {
+                                    @media screen and (max-width: 414px) {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                }
                             }
 
                             &.swym-wishlist {
@@ -68,6 +79,10 @@
 
                                 i.fa {
                                     font-size: 28px;
+
+                                    @media screen and (max-width: 414px) {
+                                        font-size: 24px;
+                                    }
                                 }
                             }
 
@@ -81,21 +96,39 @@
                                     height: 28px;
                                     width: 30px;
                                     top: 3px;
+
+                                    @media screen and (max-width: 414px) {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
                                 }
 
                                 .number-wrapper {
                                     position: absolute;
                                     top: -4px;
                                     right: 10.5px;
+
+                                    @media screen and (max-width: 414px) {
+                                        top: -2.5px;
+                                        right: 8px;
+                                    }
                 
                                     &.morethan10 {
                                         right: 9px;
                                         letter-spacing: -1px;
+
+                                        @media screen and (max-width: 414px) {
+                                            right: 8px;
+                                        }
                                     }
                 
                                     .number {
                                         color: #fff!important;
                                         font-size: 11px;
+
+                                        @media screen and (max-width: 414px) {
+                                            font-size: 9.5px;
+                                        }
                                     }
                                 }
                             }
@@ -332,12 +365,19 @@
 }
 
 .previous-next {
-    a {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1rem!important;
+    .columns {
+        @media screen and (max-width: 414px) {
+            height: auto;
+            padding-bottom: 30px;
+        }
 
-        @media screen and (min-width: 320px) and (max-width: 480px){
-            font-size: 0.857em!important;
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem!important;
+    
+            @media screen and (min-width: 320px) and (max-width: 480px){
+                font-size: 0.857em!important;
+            }
         }
     }
 }
