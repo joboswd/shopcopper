@@ -3864,34 +3864,34 @@ function(e,t){"object"==typeof exports?module.exports=t():"function"==typeof def
       });
     };
 
-    XMenu.prototype.hideHeader = function() {
-      var _this;
-      _this = this;
-      if (_this.parents_with_sub_menu.filter('[data-main-menu--open="true"]').length > 0) {
-        return false;
-      }
-      _this.header_bg.velocity({
-        opacity: 0
-      }, {
-        duration: 400
-      });
-      return _this.slideUp();
-    };
+    // XMenu.prototype.hideHeader = function() {
+    //   var _this;
+    //   _this = this;
+    //   if (_this.parents_with_sub_menu.filter('[data-main-menu--open="true"]').length > 0) {
+    //     return false;
+    //   }
+    //   _this.header_bg.velocity({
+    //     opacity: 0
+    //   }, {
+    //     duration: 400
+    //   });
+    //   return _this.slideUp();
+    // };
 
-    XMenu.prototype.slideDown = function(link, delay) {
-      var _this, opacity;
-      if (delay == null) {
-        delay = false;
-      }
-      _this = this;
-      if (delay !== 'complete') {
-        opacity = Math.round(parseFloat(_this.header_bg.css('opacity')) * 100);
-        if (opacity < 90 && _this.transparent_header) {
-          delay = 400;
-        }
-      }
-      return XMenu.__super__.slideDown.call(this, link, delay);
-    };
+    // XMenu.prototype.slideDown = function(link, delay) {
+    //   var _this, opacity;
+    //   if (delay == null) {
+    //     delay = false;
+    //   }
+    //   _this = this;
+    //   if (delay !== 'complete') {
+    //     opacity = Math.round(parseFloat(_this.header_bg.css('opacity')) * 100);
+    //     if (opacity < 90 && _this.transparent_header) {
+    //       delay = 400;
+    //     }
+    //   }
+    //   return XMenu.__super__.slideDown.call(this, link, delay);
+    // };
 
     return XMenu;
 

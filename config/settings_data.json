@@ -317,6 +317,22 @@
           "link-url": "",
           "link-text": ""
         }
+      },
+      "header_v2": {
+        "type": "header_v2",
+        "settings": {
+          "transparent-menu": false,
+          "menu": "main-menu",
+          "header-search-show": true,
+          "header-account-show": true,
+          "header-menu-center": false,
+          "header-logo-center": false,
+          "logo": "shopify:\/\/shop_images\/checkout_logo_34_x90_6962c9fc-0ede-459f-b243-8ee458615f54.png",
+          "logo-height": 50,
+          "header--promo-bar--show-on": "all",
+          "header--promo-bar--text": "CLEARANCE SALE - FURTHER MARKDOWNS!  25% OFF REGULAR + 30% OFF SALE ITEMS",
+          "header--promo-bar--link": "shopify:\/\/collections\/all"
+        }
       }
     },
     "content_for_index": [

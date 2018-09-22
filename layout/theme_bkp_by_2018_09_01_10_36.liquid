@@ -155,6 +155,9 @@
   {{ 'theme.min.js' | asset_url | script_tag }}
   {{ 'ronald.js' | asset_url | script_tag }}
 
+{{ 'limoniapps.discounturl.css' | asset_url | stylesheet_tag }}
+{{ 'limoniapps.discounturl.cart.css' | asset_url | stylesheet_tag }}
+{{ 'limoniapps.discounturl.js' | asset_url | script_tag }}
 </head>
 
 <body class="page-{{ page_title | handle }} {% if customer %}customer-logged-in {% endif %}template-{{ template | split: '.' | first | remove: '/' | remove: '_' }}">
@@ -202,5 +205,8 @@
 
 {% include 'swymSnippet' %}
 
+{% comment %}This is for Volume Discount App by hulkapps{% endcomment %}{% include 'hulkcode_common' %}
+{% include 'st-special-offers' %}
+{% include 'limoniapps-discounturl-body-bottom' %}
 </body>
 </html>

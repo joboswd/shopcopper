@@ -60,12 +60,15 @@
 
       <div class="search-account columns">
         {% include 'snippet--custom-right-nav' %}
-      </div>    
+      </div>
+      <div class="search-account--mobile columns">
+        {% include 'snippet--custom-right-nav_mobile' %}
+      </div>
 
     </div><!-- .row -->
 
     <div class="bottom-row font--accent">
-      <div class="row {% if section.settings.header-menu-center %} text-center{% endif %}">
+      <div class="rowv2 {% if section.settings.header-menu-center %} text-center{% endif %}">
       </div>
 
     </div>
@@ -79,22 +82,13 @@
         {% include 'snippet-store-title' %}
       </div>
 
-      <div class="header--mobile--cart">
-        <a class="header--mobile--cart-link font--accent" href="/cart">
-          {{ 'layout.header.cart' | t }}
-          <span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %}">
-            (<span class="number">{{ cart.item_count }}</span>)
-          </span>
-          {% include 'snippet-symbol' with 'cart' %}
-        </a>
-        <div class="header--mobile--recently-added">
-          {% include 'snippet-cart', view: 'mobile' %}
-        </div>
+      <div class="search-account--mobile columns">
+        {% include 'snippet--custom-right-nav_mobile' %}
       </div>
 
     </div>
 
-    <div class="row">
+    <div class="rowv2">
       <div class="header-divider"></div>
     </div>
   </header>
