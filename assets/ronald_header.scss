@@ -1,131 +1,383 @@
 // header
 
 //breadcrumbs and previous-next are actually part of body/main-content
+#shopify-section-header_v2 {
+    header {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            margin-bottom: 50px;
+        }
 
-header {
-    .breadcrumbs {
-        li {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-    
-            a {
-                font-size: 1rem;
+        .header--mobile {
+            padding: 20px 0 20px 20px;
 
-                @media screen and (min-width: 320px) and (max-width: 480px){
-                    font-size: 0.857em;
+            .off-canvas--open {
+                @media screen and (min-width: 414px) and (max-width: 480px) {
+                    width: 33%;
                 }
             }
 
-            @media screen and (min-width: 320px) and (max-width: 480px){
-                font-size: 0.857em;
-            }
-        }
-    }
-    
-    .previous-next {
-        a {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem!important;
+            .header--mobile--title {
+                @media screen and (max-width: 414px) {
+                    position: absolute;
+                    left: 18%;
+                }
 
-            @media screen and (min-width: 320px) and (max-width: 480px){
-                font-size: 0.857em!important;
-            }
-        }
-    }
-
-    .columns {
-        h1.title {
-            float: left;
-        }
-
-        nav.x-menu {
-            margin-left: 20px;
-        }
-    }
-
-    .search-account.columns {
-        .searchbar-container {
-            display: inline-block;
-            max-width: 180px;
-
-            .search-box {
-                border: none;
-                border-bottom: 1px solid #ebebeb;
+                img {
+                    @media screen and (max-width: 414px) {
+                        max-height: 32px;
+                    }
+                }
             }
 
-            form {
-                width: 180px;
-            }
-        }
+            .search-account--mobile.columns {
+                width: 50%;
 
-        .custom--sub-account-show {
-            display: inline-block;
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
 
-            .account-open {
-                vertical-align: middle;
+                @media screen and (min-width: 414px) and (max-width: 480px) {
+                    width: 40%;
+                }
+
+                .menu {
+                    .custom--sub-account-show {
+                        float: right;
+                        width: 100%;
+                        text-align: right;
+
+                        a {
+                            margin-left: 20px;
+
+                            &:first-of-type {
+                                margin-left: 0px;
+                            }
+
+                            @media screen and (min-width: 481px) and (max-width: 514px) {
+                                margin-left: 12px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                margin-left: 9.5px;
+                            }
+
+                            &.search-link {
+                                width: 28px;
+                                height: 28px;
+
+                                svg {
+                                    @media screen and (max-width: 414px) {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                }
+                            }
+
+                            &.swym-wishlist {
+                                position: relative;
+                                top: -2px;
+
+                                i.fa {
+                                    font-size: 28px;
+
+                                    @media screen and (max-width: 414px) {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+
+                            &.cart-link {
+                                text-transform: uppercase;
+                                top: -2px;
+                                position: relative;
+
+                                .fw--icon {
+                                    display: inline-block!important;
+                                    height: 28px;
+                                    width: 30px;
+                                    top: 3px;
+
+                                    @media screen and (max-width: 414px) {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                }
+
+                                .number-wrapper {
+                                    position: absolute;
+                                    top: -4px;
+                                    right: 10.5px;
+
+                                    @media screen and (max-width: 414px) {
+                                        top: -2.5px;
+                                        right: 8px;
+                                    }
                 
-                .fw--icon--account {
-                    left: -3px;
-                    top: 2px;
-                    width: 25px;
-                    height: 15px;
+                                    &.morethan10 {
+                                        right: 9px;
+                                        letter-spacing: -1px;
+
+                                        @media screen and (max-width: 414px) {
+                                            right: 8px;
+                                        }
+                                    }
+                
+                                    .number {
+                                        color: #fff!important;
+                                        font-size: 11px;
+
+                                        @media screen and (max-width: 414px) {
+                                            font-size: 9.5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
 
-        .swym-wishlist {
-            margin-left: 15px;
-            vertical-align: middle;
+        .row {
 
-            .fa-heart {
-                font-size: 22px;
-                position: relative;
-                top: 2px;
-            }
-        }
-
-        .cart-container {
-            display: inline-block;
-            margin-left: 15px;
-            position: relative;
-            vertical-align: middle;
-
-            .cart-link {
-                text-transform: uppercase;
-                top: -2px;
-                position: relative;
+            @media screen and (min-width: 768px) {
+                padding: 30px 20px 20px;
             }
 
-            .fw--icon {
-                display: inline-block!important;
-                height: 25px;
-                width: 32px;
-                top: 3px;
+            .columns {
+                h1.title {
+                    float: left;
+
+                    @media screen and (max-width: 1023px) {
+                        margin-left: 38px;
+                    }
+                }
+    
+                nav.x-menu {
+                    margin-left: 20px;
+
+                    @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                        margin-left: 15px;
+                    }
+
+                    @media screen and (min-width: 768px) and (max-width: 1200px) {
+                        margin-left: 0px;
+                        position: absolute;
+                        left: 0px;
+                        top: 50px;
+                    }
+
+                    .x-menu--overlap-icon {
+                        @media screen and (max-width: 1200px) {
+                            position: absolute;
+                            left: 0px;
+                            top: -52px;
+                        }
+
+                        .off-canvas--open {
+                            @media screen and (max-width: 1200px) {
+                                padding: 10px 10px 0 10px;
+                            }
+                        }
+
+                        span {
+                            font-size: 10.5px;
+                            font-weight: 600;
+                            position: absolute;
+                            bottom: -17px;
+                            left: 3px;
+                        }
+                    }
+
+                    ul.x-menu--level-1--container {
+                        li {
+                            a {
+                                @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                                    padding: 15px 9px 30px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-
-            .number-wrapper {
-                position: absolute;
-                top: 5px;
-                right: 10.5px;
-
-                &.morethan10 {
-                    right: 9.5px;
-                    letter-spacing: -1px;
+    
+            .search-account.columns {
+                @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                    right: 9px;
                 }
 
-                .number {
-                    color: #fff!important;
-                    font-size: 11px;
+                @media screen and (min-width: 768px) and (max-width: 812px) {
+                    right: 15px;
+                }
+
+                .searchbar-container {
+                    display: inline-block;
+                    max-width: 180px;
+
+                    @media screen and (min-width: 813px) and (max-width: 1499px) {
+                        left: 3px;
+                        max-width: 140px;
+                    }
+
+                    @media screen and (min-width: 768px) and (max-width: 812px) {
+                        left: 3px;
+                        max-width: 120px;
+                    }
+    
+                    .search-box {
+                        border: none;
+                        border-bottom: 1px solid #ebebeb;
+                    }
+    
+                    form {
+                        width: 180px;
+
+                        @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                            padding: 0 17px 10px 0;
+                            position: relative;
+                            right: -11px;
+                            top: -4px;
+                            width: 140px;
+                        }
+
+                        @media screen and (min-width: 813px) and (max-width: 1499px) {
+                            padding: 0px;
+                            width: 140px;
+                        }
+
+                        @media screen and (min-width: 768px) and (max-width: 812px) {
+                            padding: 0px;
+                            width: 120px;
+                        }
+                    }
+                }
+    
+                .custom--sub-account-show {
+                    display: inline-block;
+    
+                    .account-open {
+                        vertical-align: middle;
+
+                        @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                            margin-left: -2px;
+                        }
+                        
+                        .fw--icon--account {
+                            left: -3px;
+                            top: 2px;
+                            width: 25px;
+                            height: 15px;
+                        }
+                    }
+                }
+    
+                .swym-wishlist {
+                    margin-left: 15px;
+                    vertical-align: middle;
+                    
+                    @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                        margin-left: -2px;
+                    }
+    
+                    .fa-heart {
+                        font-size: 19px;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+    
+                .cart-container {
+                    display: inline-block;
+                    margin-left: 15px;
+                    position: relative;
+                    vertical-align: middle;
+
+                    @media screen and (min-width: 1201px) and (max-width: 1499px) {
+                        margin-left: -2px;
+                    }
+    
+                    .cart-link {
+                        text-transform: uppercase;
+                        top: -2px;
+                        position: relative;
+                    }
+    
+                    .fw--icon {
+                        display: inline-block!important;
+                        height: 24px;
+                        width: 31px;
+                        top: 5px;
+                    }
+    
+                    .number-wrapper {
+                        position: absolute;
+                        top: -4px;
+                        right: 10.5px;
+    
+                        &.morethan10 {
+                            right: 7.65px;
+                            letter-spacing: -1px;
+                        }
+    
+                        .number {
+                            color: #fff!important;
+                            font-size: 11px;
+                        }
+                    }
+    
+                    //cart popup 
+                    .checkout {
+                        .button {
+                            color: #fff!important;
+                        }
+                    }
                 }
             }
 
-            //cart popup 
-            .checkout {
-                .button {
-                    color: #fff!important;
+            .search-account--mobile.columns {
+                @media screen and (min-width: 768px) {
+                    display: none;
                 }
             }
         }
     }
 }
 
+// breadcrumbs contained inside a <header> inside main-content 
+
+.breadcrumbs {
+    li {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+
+        a {
+            font-size: 1rem;
+
+            @media screen and (min-width: 320px) and (max-width: 480px){
+                font-size: 0.857em;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 480px){
+            font-size: 0.857em;
+        }
+    }
+}
+
+.previous-next {
+    .columns {
+        @media screen and (max-width: 414px) {
+            height: auto;
+            padding-bottom: 30px;
+        }
+
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem!important;
+    
+            @media screen and (min-width: 320px) and (max-width: 480px){
+                font-size: 0.857em!important;
+            }
+        }
+    }
+}
