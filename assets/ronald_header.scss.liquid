@@ -8,7 +8,7 @@
         }
 
         .header--mobile {
-            padding: 20px 0 20px 20px;
+            padding: 20px 0 20px 0px;
 
             .off-canvas--open {
                 @media screen and (min-width: 414px) and (max-width: 480px) {
@@ -17,11 +17,16 @@
             }
 
             .header--mobile--title {
-                @media screen and (max-width: 414px) {
+                
+                @media screen and (min-width: 376px) and (max-width: 414px) {
+                    position: absolute;
+                    left: 12%;
+                }
+
+                @media screen and (max-width: 375px) {
                     position: absolute;
                     left: 18%;
                 }
-
                 img {
                     @media screen and (max-width: 414px) {
                         max-height: 32px;
@@ -85,8 +90,12 @@
                                     }
                                 }
                             }
+                        }
 
-                            &.cart-link {
+                        div.cart {
+                            width: fit-content;
+                            display: inline-block;
+                            a.cart-link {
                                 text-transform: uppercase;
                                 top: -2px;
                                 position: relative;
@@ -109,8 +118,8 @@
                                     right: 10.5px;
 
                                     @media screen and (max-width: 414px) {
-                                        top: -2.5px;
-                                        right: 8px;
+                                        top: -5.5px;
+                                        right: 12px;
                                     }
                 
                                     &.morethan10 {
@@ -118,7 +127,7 @@
                                         letter-spacing: -1px;
 
                                         @media screen and (max-width: 414px) {
-                                            right: 8px;
+                                            right: 8.5px;
                                         }
                                     }
                 
