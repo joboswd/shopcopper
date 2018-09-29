@@ -183,12 +183,7 @@
       },
       "password": {
         "type": "password",
-        "settings": {
-          "logo": "",
-          "logo-height": 100,
-          "password--show-newsletter": true,
-          "mailing-list--title": "<p>Sign up to our mailing list<\/p>"
-        }
+        "settings": {}
       },
       "1519177181912": {
         "type": "featured-collection",
@@ -329,9 +324,9 @@
           "header-logo-center": false,
           "logo": "shopify:\/\/shop_images\/checkout_logo_34_x90_6962c9fc-0ede-459f-b243-8ee458615f54.png",
           "logo-height": 50,
-          "header--promo-bar--show-on": "all",
-          "header--promo-bar--text": "CLEARANCE SALE - FURTHER MARKDOWNS!  25% OFF REGULAR + 30% OFF SALE ITEMS",
-          "header--promo-bar--link": "shopify:\/\/collections\/all"
+          "header--promo-bar--show-on": "none",
+          "header--promo-bar--text": "",
+          "header--promo-bar--link": ""
         }
       }
     },
@@ -482,12 +477,7 @@
         },
         "password": {
           "type": "password",
-          "settings": {
-            "logo": "",
-            "logo-height": 100,
-            "password--show-newsletter": true,
-            "mailing-list--title": "<p>Sign up to our mailing list<\/p>"
-          }
+          "settings": {}
         },
         "1519177052247": {
           "type": "slideshow",
@@ -882,12 +872,7 @@
         },
         "password": {
           "type": "password",
-          "settings": {
-            "logo": "",
-            "logo-height": 100,
-            "password--show-newsletter": true,
-            "mailing-list--title": "<p>Sign up to our mailing list<\/p>"
-          }
+          "settings": {}
         },
         "1519177052247": {
           "type": "slideshow",
@@ -1282,12 +1267,7 @@
         },
         "password": {
           "type": "password",
-          "settings": {
-            "logo": "",
-            "logo-height": 100,
-            "password--show-newsletter": true,
-            "mailing-list--title": "<p>Sign up to our mailing list<\/p>"
-          }
+          "settings": {}
         },
         "1519177052247": {
           "type": "slideshow",
@@ -1686,12 +1666,7 @@
         },
         "password": {
           "type": "password",
-          "settings": {
-            "logo": "",
-            "logo-height": 100,
-            "password--show-newsletter": true,
-            "mailing-list--title": "<p>Sign up to our mailing list<\/p>"
-          }
+          "settings": {}
         },
         "1519177052247": {
           "type": "slideshow",

@@ -8,3 +8,11 @@ function toggle(e) {
       e.className = 'closed';
     }
   }
+  $( document ).ready(function() {
+    $('.mobile-collapse').on('click', function() {
+      // $(this).removeClass('plus');
+      $(this).toggleClass('minus');
+    });
+  });
+
+ 

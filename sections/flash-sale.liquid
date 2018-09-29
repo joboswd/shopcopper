@@ -1,0 +1,258 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_button }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {% if settings.favicon != blank %}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {% endif %}
+
+    <title>
+      {{ shop.name }} &ndash; {{ 'general.password_page.opening_soon' | t }}
+    </title>
+
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    {% include 'social-meta-tags' %}
+
+    {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+    {{ 'password.scss.css' | asset_url | stylesheet_tag }}
+
+    {{ 'countdown.min.js' | asset_url | script_tag }}
+
+    <link rel="" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">    
+    
+    <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
+
+    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
+
+    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
+
+    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'password.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'password.js' | asset_url }}"></script><![endif]-->
+
+    {{ content_for_header }}
+  </head>
+
+  <body class="template-password text-center">
+    <div class="top-part">
+        <h3>EVERYTHING 199</h3>
+        <img src="{{ 'brush-underline.jpg' | asset_url }}">
+        <h2>FLASH SALE</h2>
+        <p>BEGINS IN:</p>
+    </div>
+    <div id="timer">
+      <!-- instantiate countdown.js -->
+    </div>
+    <div class="sub-timer">
+      <ul>
+        <li>HOURS</li>
+        <li>MINUTES</li>
+        <li>SECONDS</li>
+      </ul>
+    </div>
+    <div class="login">
+      <p>
+        EARLY ACCESS WINNERS<br/>
+        INPUT YOUR PASSWORD BELOW:
+      </p>
+      <div class="login-form">
+      {% form 'storefront_password' %}
+        {{ form.errors | default_errors }}
+        <input class="small" type="password" name="password">
+        <input class="small button" type="submit" value="LOGIN">
+        {% endform %}
+      </div>
+    </div>  
+    <div class="bottom-part text-center">
+      <div class="date">
+        Sept. 22, 9PM - 9:30PM
+      </div>
+      <p class="hurry">(30 MINUTES ONLY!)</p>
+      <p class="terms">T&C’S: *Promo will run on September 22, from 9PM to 9:30PM. *All Sales are FINAL - Strictly No Cancellations / No Returns / No Exchanges. *Strictly No Extension of Reservations.<br/>
+      *Free Shipping is temporarily suspended during promo period. *Rush Shipping is temporarily not available during promo period.<br/>
+      *Adjusted Metro Manila Shipping Fee of Php 99 via XEND and Airship Express - CASH ON DELIVERY will apply during promo period.<br/>
+      *Extended processing and shipping times may be experienced during this period.<br/>
+      *By placing an order through our website, you agree to the terms and conditions stated herein.</p>
+    </div>  
+     {% comment %} {{content_for_layout}}  {% endcomment %}
+    <script type="text/javascript">
+        (function(global) {
+  "use strict";
+
+  // Vanilla JS alternative to $.extend
+  global.extend = function(obj, extObj) {
+    obj = obj || {};
+    if (arguments.length > 2) {
+      for (var a = 1; a < arguments.length; a++) {
+        global.extend(obj, arguments[a]);
+      }
+    } else {
+      for (var i in extObj) {
+        obj[i] = extObj[i];
+      }
+    }
+    return obj;
+  };
+
+  // Countdown constructor
+  var Countdown = function(conf) {
+    this.conf = global.extend({
+      // Dates
+      dateStart  : new Date(),
+      dateEnd    : new Date(new Date().getTime() + (24 * 60 * 60 * 1000)),
+
+      // Default elements
+      selector   : ".timer",
+
+      // Messages
+      //msgBefore  : "Be ready!",
+      //msgAfter   : "It's over, sorry folks!",
+      msgPattern : "{days} days, {hours} hours, {minutes} minutes and {seconds} seconds left.",
+
+      // Callbacks
+      onStart    : null,
+      onEnd      : null
+    }, conf);
+
+    // Private variables
+    this.selector = document.querySelectorAll(this.conf.selector);
+    this.interval = 1000;
+    this.now      = new Date();
+    this.patterns = [
+      { pattern: "{years}", secs: 31536000 },
+      { pattern: "{months}", secs: 2628000 },
+      { pattern: "{weeks}", secs: 604800 },
+      { pattern: "{days}", secs: 86400 },
+      { pattern: "{hours}", secs: 3600 },
+      { pattern: "{minutes}", secs: 60 },
+      { pattern: "{seconds}", secs: 1 }
+    ];
+
+    // Doing all the things!
+    this.init();
+  };
+
+  // Initializing the instance
+  Countdown.prototype.init = function() {
+    this.defineInterval();
+    if(this.now < this.conf.dateEnd && this.now >= this.conf.dateStart) {
+      this.run();
+      this.callback("start");
+    } else {
+      this.outOfInterval();
+    }
+  };
+
+  // Running the countdown
+  Countdown.prototype.run = function() {
+    var now = this.now.valueOf() / 1000,
+        tar = this.conf.dateEnd.valueOf() / 1000,
+        sec = Math.abs(tar - now);
+
+    // Vanilla JS alternative to $.proxy
+    var that  = this;
+    var timer = global.setInterval(function() {
+      sec--;
+
+      if(sec > 0) {
+        that.display(sec);
+      } else {
+        clearInterval(timer);
+        that.outOfInterval();
+        that.callback("end");
+      }
+    }, this.interval);
+
+    this.display(sec);
+  };
+
+  // Displaying the countdown
+  Countdown.prototype.display = function(sec) {
+    var output = this.conf.msgPattern;
+
+    for (var b = 0; b < this.patterns.length; b++) {
+      var currentPattern = this.patterns[b];
+
+      if (this.conf.msgPattern.indexOf(currentPattern.pattern) !== -1) {
+        var number = Math.floor(sec / currentPattern.secs);
+        sec -= number * currentPattern.secs;
+        output = output.replace(currentPattern.pattern, number);
+      }
+    }
+
+    for(var c = 0; c < this.selector.length; c++) {
+      this.selector[c].innerHTML = output;
+    }
+  };
+
+  // Defining the interval to be used for refresh
+  Countdown.prototype.defineInterval = function() {
+    for (var e = this.patterns.length; e > 0; e--) {
+      var currentPattern = this.patterns[e-1];
+
+      if (this.conf.msgPattern.indexOf(currentPattern.pattern) !== -1) {
+        this.interval = currentPattern.secs * 1000;
+        return;
+      }
+    }
+  };
+
+  // Canceling the countdown in case it's over
+  Countdown.prototype.outOfInterval = function() {
+    var message = this.now < this.conf.dateStart ? this.conf.msgBefore : this.conf.msgAfter;
+    for(var d = 0; d < this.selector.length; d++) {
+      this.selector[d].innerHTML = message;
+    }
+  };
+
+  // Dealing with events and callbacks
+  Countdown.prototype.callback = function(event) {
+    event = event.capitalize();
+
+    // onStart callback
+    if(typeof this.conf["on" + event] === "function") {
+      this.conf["on" + event]();
+    }
+
+    // Triggering a jQuery event if jQuery is loaded
+    if(typeof global.jQuery !== "undefined") {
+      global.jQuery(this.conf.selector).trigger("countdown" + event);
+    }
+  };
+
+  // Adding a capitalize method to String
+  String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  };
+
+  global.Countdown = Countdown;
+}(window));
+
+// Initializing two countdowns
+var tomorrow     = new Countdown(); // All defaults
+var happyNewYear = new Countdown({  // Custom
+  selector: '#timer',
+  dateEnd: new Date('2018/09/22 18;00'),
+  dateEnd: new Date('2018/09/22 21:00'),
+  msgPattern : '{hours} : {minutes} : {seconds}',
+  onStart: function() { 
+    console.log('Starting countdown'); 
+  },
+  onEnd: function() {
+    console.log('Ending countdown');
+  }
+});
+
+    </script>
+  </body>
+</html>
